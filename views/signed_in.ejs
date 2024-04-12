@@ -24,7 +24,7 @@
         <input type="button" id="register" value="Register"/>
         <script>
             document.getElementById('register').onclick = function() {
-                window.IdentityProvider.register('http://localhost:8080/fedcm.json');
+                window.IdentityProvider.register(window.location.origin + '/fedcm.json');
             };
         </script>
         <div class="flex flex-col items-center mb-4">
