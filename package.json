@@ -9,6 +9,9 @@
     "build": "npm run clean && tsc && node copy-static.js",
     "postinstall": "if [ \"$NODE_ENV\" = \"production\" ]; then npm run build; fi"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@simplewebauthn/server": "^7.3.1",
     "base64url": "^3.0.1",
